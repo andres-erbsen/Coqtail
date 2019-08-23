@@ -47,3 +47,8 @@ setlocal iskeyword+='
 setlocal includeexpr=coqtail#FindLib(v:fname)
 setlocal suffixesadd=.v
 setlocal include=\\<Require\\>\\(\\s*\\(Import\\\|Export\\)\\>\\)\\?
+
+" Tags
+if exists('+tagfunc')
+  setlocal tagfunc=coqtail#GetTags
+endif
