@@ -16,10 +16,12 @@ It supports:
 
 ## Installation and Requirements
 
+Regardless of the installation method chosen below, the vim configuration (e.g. `.vimrc`) should include `filetype plugin indent on` and `syntax on` for this plugin to be loaded and work correctly (`indent` is optional but recommended). Some systems (e.g. Arch Linux) have this configuration by default, but others do not.
+
 As a [vim package](https://vimhelp.org/repeat.txt.html#packages):
 
 ```sh
-mkdir ~/.vim/pack/coq/start
+mkdir -p ~/.vim/pack/coq/start
 git clone https://github.com/let-def/vimbufsync.git ~/.vim/pack/coq/start/vimbufsync
 git clone https://github.com/whonore/coqtail.git ~/.vim/pack/coq/start/coqtail
 vim +helptags\ .vim/pack/coq/start/coqtail/doc +q
